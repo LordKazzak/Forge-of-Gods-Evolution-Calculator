@@ -1,0 +1,1 @@
+The tool's GUI should be self explanatory, if you're familiar with the game's evolve mechanic. Other than that, most controls have mouseover text providing aditional explanations. Executable available under releases. Happy evolving!

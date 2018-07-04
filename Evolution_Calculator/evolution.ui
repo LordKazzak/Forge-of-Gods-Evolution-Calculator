@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Evolution</class>
+ <widget class="QMainWindow" name="Evolution">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Evolution</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Data</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Target</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QCheckBox" name="checkBox_evolveEvent">
+         <property name="text">
+          <string>Megaevolve Event</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QCheckBox" name="checkBox_megaEvolve">
+         <property name="toolTip">
+          <string>Check if max level materials will be used even in first stage of evolution.</string>
+         </property>
+         <property name="text">
+          <string>Maximum level materials</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QCheckBox" name="checkBox">
+         <property name="toolTip">
+          <string>Check if all creatures will have the same materials.</string>
+         </property>
+         <property name="text">
+          <string>Materials equal</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QCheckBox" name="checkBox_wolves">
+         <property name="toolTip">
+          <string>Check if you are evolving wolves (they have a lesser requirement for elite).</string>
+         </property>
+         <property name="text">
+          <string>Wolves</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>From</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>To</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_from">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spinBox_to">
+         <property name="minimum">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QComboBox" name="comboBox">
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Basic</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Megaevolved</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Elite</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_s4">
+      <property name="title">
+       <string>Stage4 Creature</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_EM3">
+         <property name="text">
+          <string>Evolution Monster</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="comboBox_evo2">
+         <item>
+          <property name="text">
+           <string>Basic</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Megaevolved</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Elite</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_s3c2">
+         <property name="title">
+          <string>Stage3 Creature2</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox_s2c4">
+            <property name="title">
+             <string>Stage2 Creature4</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Main 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSpinBox" name="spinBox_c4main1">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Main 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSpinBox" name="spinBox_c4main2">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox_c4megaEvolve">
+               <property name="toolTip">
+                <string>Check if max level materials will be used even in first stage of evolution.</string>
+               </property>
+               <property name="text">
+                <string>Maximum level materials</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_s2c3">
+            <property name="title">
+             <string>Stage2 Creature3</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="2" column="2">
+              <widget class="QSpinBox" name="spinBox_c3main2">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Main 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Main 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QSpinBox" name="spinBox_c3main1">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QCheckBox" name="checkBox_c3megaEvolve">
+               <property name="toolTip">
+                <string>Check if max level materials will be used even in first stage of evolution.</string>
+               </property>
+               <property name="text">
+                <string>Maximum level materials</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_EM2">
+            <property name="text">
+             <string>Evolution Monster</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_c2evo1">
+            <item>
+             <property name="text">
+              <string>Basic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Megaevolved</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Elite</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_s3c1">
+         <property name="title">
+          <string>Stage3 Creature1</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox_s2c2">
+            <property name="title">
+             <string>Stage2 Creature2</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Main 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSpinBox" name="spinBox_c2main1">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Main 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSpinBox" name="spinBox_c2main2">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox_c2megaEvolve">
+               <property name="toolTip">
+                <string>Check if max level materials will be used even in first stage of evolution.</string>
+               </property>
+               <property name="text">
+                <string>Maximum level materials</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_s2c1">
+            <property name="title">
+             <string>Stage2 Creature1</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="1">
+              <widget class="QSpinBox" name="spinBox_c1main1">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Main 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSpinBox" name="spinBox_c1main2">
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="singleStep">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Main 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox_c1megaEvolve">
+               <property name="toolTip">
+                <string>Check if max level materials will be used even in first stage of evolution.</string>
+               </property>
+               <property name="text">
+                <string>Maximum level materials</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_EM1">
+            <property name="text">
+             <string>Evolution Monster</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_c1evo1">
+            <item>
+             <property name="text">
+              <string>Basic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Megaevolved</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Elite</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+         <zorder>groupBox_s2c1</zorder>
+         <zorder>groupBox_s2c1</zorder>
+         <zorder>groupBox_s2c2</zorder>
+         <zorder>label_EM1</zorder>
+         <zorder>comboBox_c1evo1</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLabel" name="label_missing">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>spinBox_from</tabstop>
+  <tabstop>spinBox_to</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>checkBox_wolves</tabstop>
+  <tabstop>checkBox_megaEvolve</tabstop>
+  <tabstop>checkBox_evolveEvent</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>spinBox_c1main1</tabstop>
+  <tabstop>spinBox_c1main2</tabstop>
+  <tabstop>checkBox_c1megaEvolve</tabstop>
+  <tabstop>spinBox_c2main1</tabstop>
+  <tabstop>spinBox_c2main2</tabstop>
+  <tabstop>checkBox_c2megaEvolve</tabstop>
+  <tabstop>comboBox_c1evo1</tabstop>
+  <tabstop>spinBox_c3main1</tabstop>
+  <tabstop>spinBox_c3main2</tabstop>
+  <tabstop>checkBox_c3megaEvolve</tabstop>
+  <tabstop>spinBox_c4main1</tabstop>
+  <tabstop>spinBox_c4main2</tabstop>
+  <tabstop>checkBox_c4megaEvolve</tabstop>
+  <tabstop>comboBox_c2evo1</tabstop>
+  <tabstop>comboBox_evo2</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
